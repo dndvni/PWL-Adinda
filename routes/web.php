@@ -20,5 +20,5 @@ Route::get('/about', function () {
 });
 
 Route::get('/user/{name}', function ($name) {
-    return 'Adinda Mirza Devani'.$name;
+    return 'Nama Saya '.$name;
 });
