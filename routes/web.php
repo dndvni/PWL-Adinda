@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return '2341720046_Adinda Mirza Devani';
 });
+
+Route::get('/user/{name}', function ($name) {
+    return 'Adinda Mirza Devani'.$name;
+});
