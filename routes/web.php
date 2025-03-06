@@ -10,3 +10,7 @@ Route::get('/hello', function () {
 Route::get('/world', function () {
     return 'World';
 });
+
+Route::get('/', function () {
+    return 'Selamat Datang';
+});
