@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\WelcomeController;
@@ -24,7 +25,7 @@ Route::get('/post/{post}/comments/{comment}', function ($postId, $commentId) {
     return 'Pos ke-'.$postId." Komentar ke-: ".$commentId;
 });
 
-Route::get('/articles/{id}', [PageController::class, 'articles']);
+Route::get('/articles/{id}', [ArticleController::class, 'articles']);
 
 Route::get('/user/{name}', function ($name=null) {
     return 'Nama Saya '.$name;
