@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\WelcomeController;
@@ -13,7 +14,7 @@ Route::get('/world', function () {
 
 Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/about', [PageController::class, 'about']);
+Route::get('/about', [AboutController::class, 'about']);
 
 Route::get('/user/{name}', function ($name) {
     return 'Nama Saya '.$name;
