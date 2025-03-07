@@ -22,3 +22,9 @@ Route::get('/about', function () {
 Route::get('/user/{name}', function ($name) {
     return 'Nama Saya '.$name;
 });
+
+Route::get('/post/{post}/comments/{comment}', function ($postId, $commentId) {
+    return 'Pos ke-'.$postId." Komentar ke-: ".$commentId;
+});
+
+
